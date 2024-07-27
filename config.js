@@ -80,7 +80,7 @@ module.exports = {
   ownername:process.env.OWNER_NAME|| "𝗖𝗛𝗔𝗧𝗛𝗨𝗥𝗔[𝗖𝗣]",
 
 
-  errorChat : process.env.ERROR_CHAT || "false",
+  errorChat : process.env.ERROR_CHAT || "true",
   KOYEB_API : process.env.KOYEB_API  || "false",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
