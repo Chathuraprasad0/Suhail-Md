@@ -33,7 +33,7 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 
 //========================= [ BOT SETTINGS ] ======8===================\\
 global.style = process.env.STYLE   || Math.floor(Math.random()*6) || '0'  // put '1' to "5" here to check bot styles
-global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
+global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not responed
 global.gdbye = process.env.GOODBYE || process.env.CAN_GOODBYE || "false"; 
 global.wlcm  = process.env.WELCOME || process.env.CAN_WELCOME || "false";  // Make it "false" for disable WELCOME 
 
@@ -41,7 +41,7 @@ global.warncount = process.env.WARN_COUNT || 3
 global.disablepm = process.env.DISABLE_PM || "false"
 global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in groups when public mode
 
-global.MsgsInLog = process.env.MSGS_IN_LOG|| "false" // "true"  to see messages , "log" to show logs , "false" to hide logs messages
+global.MsgsInLog = process.env.MSGS_IN_LOG|| "true" // "true"  to see messages , "log" to show logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES || "text" // "text" // set Image/video urls here
 global.waPresence= process.env.WAPRESENCE ||  "typing" ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
 
@@ -81,7 +81,7 @@ module.exports = {
 
 
   errorChat : process.env.ERROR_CHAT || "true",
-  KOYEB_API : process.env.KOYEB_API  || "false",
+  KOYEB_API : process.env.KOYEB_API  || "true",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "https://platform.openai.com/account/api-keys",
@@ -92,7 +92,7 @@ module.exports = {
 
 
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
-  LANG: ( process.env.THEME ||  "𝙲𝙷𝙰𝚃𝙷𝚄𝚁𝙰"  ).toUpperCase(),
+  LANG: ( process.env.THEME ||  "CHATHURA"  ).toUpperCase(),
 
 
 
